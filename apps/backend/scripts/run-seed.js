@@ -1,0 +1,1 @@
+import 'dotenv/config'\nimport { db } from '../src/db.js'\nimport fs from 'node:fs'\nimport path from 'node:path'\n\nconst file = path.join(process.cwd(), 'apps', 'backend', 'seeds', 'seed.sql')\nconst sql = fs.readFileSync(file, 'utf-8')\nconsole.log('Seeding database...')\ndb.exec(sql)\nconsole.log('Seed complete')\n

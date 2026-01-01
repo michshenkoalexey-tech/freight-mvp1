@@ -1,0 +1,1 @@
+export const config = {\n  jwtSecret: process.env.JWT_SECRET || 'dev_secret_change_me',\n  port: Number(process.env.PORT || 4000),\n  pastDueDays: Number(process.env.PAST_DUE_DAYS || 14),\n}\n

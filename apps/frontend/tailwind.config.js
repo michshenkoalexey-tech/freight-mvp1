@@ -1,0 +1,1 @@
+/** @type {import('tailwindcss').Config} */\nexport default {\n  content: ['./index.html', './src/**/*.{ts,tsx}'],\n  theme: {\n    extend: {\n      colors: {\n        background: '#0B0D12',\n        primary: '#3E86FF'\n      }\n    }\n  },\n  plugins: []\n}\n

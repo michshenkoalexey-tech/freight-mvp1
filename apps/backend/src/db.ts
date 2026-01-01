@@ -1,0 +1,1 @@
+import Database from 'better-sqlite3'\nimport path from 'node:path'\n\nconst DB_PATH = process.env.DB_PATH || path.join(process.cwd(), 'data', 'app.db')\n\nexport const db = new Database(DB_PATH)\n\ndb.pragma('journal_mode = WAL')\n

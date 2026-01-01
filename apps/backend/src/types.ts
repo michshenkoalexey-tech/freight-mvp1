@@ -1,0 +1,1 @@
+export type Role = 'customer' | 'driver' | 'admin'\nexport type UserStatus = 'Active' | 'Suspended' | 'Blocked'\n\nexport interface JWTPayload {\n  sub: number\n  role: Role\n}\n
